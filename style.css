@@ -19,11 +19,16 @@ main {
 }
 .hero {
     display: flex;
-    justify-content: stretch;
-    height: max-content;
+    justify-content: space-evenly;
     width: max-content;
+    align-content: stretch;
+    align-items: stretch;
+    height: auto;
 }
 .hero-text {
+    display: grid;
+    place-content: center;
+    height: auto;
     background-image: linear-gradient(135deg, #2e251e, #43362c, #251e19);
     color: white;
     letter-spacing: 6%;
@@ -70,10 +75,11 @@ main {
     justify-content: center;
     width: 100%;
     max-width: 50%;
+    height: 100%;
 }
 .hero-image img {
     width: 100%;
-    max-height: min-content;
+    max-height: 100%;
     object-fit: cover;
 }
 nav {
@@ -142,6 +148,7 @@ header button {
 .detail {
     max-width: 300px;
     padding-right: 1em;
+    margin-top: 2em;
 }
 .detail h4 {
     font-size: 18px;
